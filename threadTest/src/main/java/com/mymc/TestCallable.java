@@ -13,7 +13,7 @@ public class TestCallable implements Callable<Boolean> {
         TestCallable callable = new TestCallable();
 
         //创建执行服务
-        ExecutorService service = Executors.newFixedThreadPool(1);
+        ExecutorService service = Executors.newFixedThreadPool(3);
         //提交执行
         Future<Boolean> res = service.submit(callable);
 
