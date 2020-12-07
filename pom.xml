@@ -11,6 +11,8 @@
     <module>threadTest</module>
     <module>designModel</module>
       <module>zuowa</module>
+    <module>注解与反射</module>
+      <module>tcpip</module>
   </modules>
   <packaging>pom</packaging>
 
