@@ -13,6 +13,7 @@
       <module>zuowa</module>
     <module>注解与反射</module>
       <module>tcpip</module>
+      <module>springtest</module>
   </modules>
   <packaging>pom</packaging>
 

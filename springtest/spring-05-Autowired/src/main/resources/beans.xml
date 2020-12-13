@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/aop
+        https://www.springframework.org/schema/context/spring-aop.xsd">
+
+    <!--开启注解的支持-->
+    <context:annotation-config/>
+
+
+    <bean id="cat" class="com.kuang.pojo.Cat"/>
+    <bean id="dog" class="com.kuang.pojo.Dog"/>
+    <bean id="dog222" class="com.kuang.pojo.Dog"/>
+    <bean id="people" class="com.kuang.pojo.People"/>
+
+
+
+
+    <!--&lt;!&ndash;-->
+    <!--byName: 会自动在容器上下文中查找,和自己对象set方法后面的值对应的beanid!-->
+    <!--byType: 会自动在容器上下文中查找,和自己对象属性类型相同的beanid!-->
+    <!--&ndash;&gt;-->
+    <!--<bean id="people" class="com.kuang.pojo.People" autowire="byName">-->
+        <!--<property name="name" value="小狂神呀"/>-->
+        <!--&lt;!&ndash;<property name="dog" ref="dog"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;<property name="cat" ref="cat"/>&ndash;&gt;-->
+    <!--</bean>-->
+    <!--&lt;!&ndash;-->
+    <!--小结:-->
+    <!--byname的时候,需要保证所有的bean的id唯一,并且这个bean需要和自动注入的属性的set方法的值一致!-->
+    <!--bytype的时候,需要保证所有bean的class唯一,并且这个bean需要和自动注入的属性的类型一致!-->
+    <!--&ndash;&gt;-->
+
+
+</beans>
