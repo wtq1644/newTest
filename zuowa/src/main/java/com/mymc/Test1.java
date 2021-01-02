@@ -5,6 +5,10 @@ public class Test1 {
     String yuju;
     int a =7 ;
 
+    {
+        System.out.println("666");
+    }
+
     public String getYuju() {
         return yuju;
     }
@@ -23,6 +27,7 @@ public class Test1 {
 
     public static void main(String[] args) {
         Test1 test1 = new Test1();
+        Test1 test2=new Test1();
         test1.setYuju("676767");
         test1.setA(give.b);
         System.out.println(test1.getA());
